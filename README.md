@@ -1,58 +1,52 @@
 # Language school landing
 
-**Tatra Talk** — адаптивный лендинг школы словацкого языка. Сайт знакомит со школой, помогает выбрать курс от A1 до C2 или деловой словацкий, представляет преподавателей и приглашает записаться на обучение.
+**Tatra Talk** is a responsive landing page for a Slovak language school. It introduces the school and its teachers, helps visitors explore courses from A1 to C2 or Business Slovak, and invites them to enroll.
 
-Две версии интерфейса — **EN / RU**. Визуальная основа: крупная типографика, иллюстрация гор, хвойный зелёный и лаймовые акценты.
+The interface is available in **English and Russian**. The design combines bold typography, a mountain illustration, forest green, and lime accents.
 
-## Первый экран
+## Hero section
 
-### English
+![Tatra Talk hero section](docs/screenshots/hero-en.jpg)
 
-![Первый экран Tatra Talk на английском](docs/screenshots/hero-en.jpg)
+## Course explorer
 
-### Русский
+On larger screens, the section stays pinned while scrolling moves the course cards through a vertical reel with subtle scaling and tilt. After a short scroll gesture, the next card settles into place. On mobile, visitors select a course by tapping.
 
-![Первый экран Tatra Talk на русском](docs/screenshots/hero-ru.jpg)
+![Interactive course explorer](docs/screenshots/courses.jpg)
 
-## Выбор курса
+## Features
 
-На широком экране секция фиксируется во время прокрутки, а карточки справа движутся вертикальной лентой с изменением масштаба и наклона. После короткого жеста карточка плавно встаёт на место. На мобильных курс выбирается нажатием.
+- English and Russian language switcher.
+- Four learning paths: beginner, intermediate, advanced, and Business Slovak.
+- Interactive vocabulary and expandable teacher biographies.
+- Responsive layouts, a mobile menu, and keyboard navigation for courses.
+- Support for `prefers-reduced-motion`.
+- Demo enrollment form with field validation.
 
-![Интерактивный блок выбора курса](docs/screenshots/courses.jpg)
+> The form is a local demo: no data is submitted. Visitors can use the school's contact details to enroll.
 
-## Возможности
+## Getting started
 
-- Переключение английского и русского языка.
-- Четыре направления обучения: начальный, средний, продвинутый и деловой словацкий.
-- Интерактивный словарик и раскрывающиеся биографии преподавателей.
-- Адаптивная вёрстка, мобильное меню и управление курсами с клавиатуры.
-- Поддержка `prefers-reduced-motion`.
-- Демонстрационная форма записи с проверкой полей.
+Open `Index.html` in your browser. No dependencies or build step are required.
 
-> Форма работает локально: данные никуда не отправляются. Для реальной записи на сайте есть контакты школы.
-
-## Запуск
-
-Откройте `Index.html` в браузере — установка зависимостей и сборка не нужны.
-
-Или запустите локальный сервер из папки проекта:
+Alternatively, start a local server from the project directory:
 
 ```sh
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Затем откройте [http://127.0.0.1:4173/Index.html](http://127.0.0.1:4173/Index.html).
+Then visit [http://127.0.0.1:4173/Index.html](http://127.0.0.1:4173/Index.html).
 
-## Технологии и файлы
+## Stack and project structure
 
-Чистые **HTML, CSS и JavaScript**, SVG-графика и локальные шрифты — без фреймворков и внешних зависимостей.
+Built with **HTML, CSS, and vanilla JavaScript**, SVG graphics, and local fonts. No frameworks or external dependencies.
 
-| Файл / папка | Назначение |
+| File / directory | Purpose |
 | --- | --- |
-| `Index.html` | Разметка страницы и SVG-иллюстрации |
-| `styles.css` | Дизайн, адаптивность и анимации |
-| `script.js` | Переводы интерфейса и взаимодействия |
-| `data.js` | Данные курсов, преподавателей и школы |
-| `Images/` | Логотип и иконка сайта |
-| `fonts/` | Golos Text и лицензия OFL |
-| `docs/screenshots/` | Скриншоты сайта |
+| `Index.html` | Page markup and SVG illustrations |
+| `styles.css` | Styling, responsive layouts, and animations |
+| `script.js` | Interface translations and interactions |
+| `data.js` | Course, teacher, and school content |
+| `Images/` | Logo and favicon |
+| `fonts/` | Golos Text fonts and OFL license |
+| `docs/screenshots/` | Website screenshots |
