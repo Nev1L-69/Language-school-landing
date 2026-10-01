@@ -1,0 +1,15 @@
+# Local backups and browser preview helpers
+/original/
+/preview/
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+node_modules/
+__pycache__/
+*.log
+.DS_Store
+Thumbs.db
